@@ -28,6 +28,7 @@ export default function Home() {
           whileTap={{ scale: 0.9 }}
           aria-label="Toggle theme"
         >
+          
           <AnimatePresence mode="wait">
             {theme === "dark" ? (
               <motion.span
