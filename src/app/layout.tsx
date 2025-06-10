@@ -11,7 +11,7 @@ interface RootLayoutProps {
 export const metadata = {
   title: "Bill Maker",
   description: "Make your bills easily with our web application.",
-  keywords: ["Next.js", "SEO", "ThemeProvider", "Web App"],
+  keywords: ["Next.js", "SEO","Bill",  "ThemeProvider", "Web App", "Billing", "Invoice", "Finance" , "Accounting", "Business"],
   authors: [{ name: "Aalok", url: "https://bill.sequoiacodes.com.np" }],
   viewport: "width=device-width, initial-scale=1",
   icons: {
