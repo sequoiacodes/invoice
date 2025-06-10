@@ -48,11 +48,12 @@ export default function Home() {
         </motion.div>
 
         {/* Theme Toggle Button with Dropdown - FIXED POSITIONING */}
-        <div className="relative z-40"> {/* Make this div relative and give it a z-index */}
+        <div className="fixed z-40 right-2 md:right-5"> {/* Make this div relative and give it a z-index */}
+         <div className="relative ">
           <motion.button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             // Removed 'fixed top-5 z-30 right-4' from here
-            className="p-3 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center"
+            className="p-3  rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition duration-300 ease-in-out flex items-center justify-center"
             whileTap={{ scale: 0.9 }}
             aria-label="Toggle theme"
           >
@@ -101,6 +102,7 @@ export default function Home() {
               </motion.div>
             )}
           </AnimatePresence>
+          </div>
         </div>
       </header>
 

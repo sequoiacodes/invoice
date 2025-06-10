@@ -74,7 +74,7 @@ export default function InvoiceForm({
   }, [invoiceData.items, invoiceData.taxRate, invoiceData.subtotal, invoiceData.tax, invoiceData.total, setInvoiceData])
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 text-black dark:text-white">
       <div className="grid md:grid-cols-2 gap-8">
         <Card>
           <CardHeader>
@@ -117,7 +117,7 @@ export default function InvoiceForm({
 
         <Card>
           <CardHeader>
-            <CardTitle>Client Information</CardTitle>
+            <CardTitle className="">Client Information</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">

@@ -53,9 +53,9 @@ export default function TemplateSelector({ selectedTemplate, onSelectTemplate }:
 
   return (
     <Card>
-      <CardContent className="pt-6">
+      <CardContent className="pt-6 ">
         <div className="mb-4">
-          <h3 className="text-lg font-medium text-gray-900">Select Template</h3>
+          <h3 className="text-lg font-medium text-black dark:text-white">Select Template</h3>
           <p className="text-sm text-gray-600">Choose a design for your invoice</p>
         </div>
 
