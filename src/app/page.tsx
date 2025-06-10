@@ -18,8 +18,13 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl relative font-extrabold tracking-tight text-gray-900 dark:text-white mb-1">BiLL <span className=" absolute bottom-5 text-xs font-normal transform -translate-x-4 ">{theme}</span> </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Professional Invoice Maker</p>
+          <h1 className="text-5xl relative font-extrabold tracking-tight text-gray-900 dark:text-white mb-1 group">
+            BiLL
+            <span className="absolute bottom-5 text-xs font-normal uppercase transform -translate-x-4 transition-transform duration-1000 group-hover:translate-x-0">
+              {theme}
+            </span>
+          </h1>  
+        <p className="text-lg text-gray-600 dark:text-gray-400">Professional Invoice Maker</p>
         </motion.div>
 
         <motion.button
